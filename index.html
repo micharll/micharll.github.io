@@ -17,8 +17,9 @@
       .container {
         gap: 20px;
         justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
         overflow: hidden;
       }
       .container div {
@@ -26,7 +27,6 @@
         padding: 5px;
         font-size: 24px;
         aspect-ratio: 148/210;
-        flex: 1 1 150px;
 }
       .container div img {
         height: 100%;
